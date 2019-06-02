@@ -22,4 +22,4 @@ See screenshots for details.
 
 ![screenshotShell](https://i.imgur.com/piK8n2t.png)
 
-Colorscheme used for these screenshots: [grvboxLink](https://github.com/morhetz/gruvbox "gruvbox")
+Colorscheme used for these screenshots: [gruvbox](https://github.com/morhetz/gruvbox "gruvbox on github")

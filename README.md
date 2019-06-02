@@ -18,10 +18,8 @@ If installing without a plugin manager, simply move all of the directories in th
 See screenshots for details.
 
 # Screenshots
-Set and map
 ![screenshotLf](https://i.imgur.com/f79PaLy.png)
 
-Shell script highlighting
 ![screenshotShell](https://i.imgur.com/piK8n2t.png)
 
 Colorscheme used for these screenshots: [grvboxLink](https://github.com/morhetz/gruvbox "gruvbox")

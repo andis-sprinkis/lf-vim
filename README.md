@@ -13,8 +13,8 @@ Plug 'VebbNix/lf-vim'
 If installing without a plugin manager, simply move all of the directories in this repository to your `~/.vim/` directory.
 
 # Info
-+Seperate colour used for lf variables like $f, $fx, $fs and $id.
-+Shell script highlighting is used between `cmd [CMD] ${{ }}`.
++ Seperate colour used for lf variables like $f, $fx, $fs and $id.
++ Shell script highlighting is used between `cmd [CMD] ${{ }}`.
 See screenshots for details.
 
 # Screenshots

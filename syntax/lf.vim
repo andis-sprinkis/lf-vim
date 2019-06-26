@@ -26,8 +26,7 @@ syn keyword lfOptions push up half-up up half-up page-up down half-down page-dow
 syn match lfShell '\$.*$\|:.*$\|%.*$\|!.*$\|&.*$' contains=lfVar,lfSpecial,lfString
 
 " Special Matching
-syn match lfSpecial '<.*>'
-syn match lfSpecial '\\.'
+syn match lfSpecial '<.*>\|\\.'
 
 " Shell Script Matching for cmd
 unlet b:current_syntax

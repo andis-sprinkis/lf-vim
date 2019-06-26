@@ -41,7 +41,7 @@ syn match    lfSpecial        '<.*>\|\\.'
 unlet b:current_syntax
 syn include  @Shell           syntax/sh.vim
 let b:current_syntax = "lf"
-syn region   lfIgnore         start=".{{\n" end="^}}" fold contains=lfExternalShell
+syn region   lfIgnore         start=".{{\n" end="^}}" contains=lfExternalShell
 syn match    lfExternalShell  "^\s.*$" transparent contained contains=@Shell
 "}}}
 

@@ -1,12 +1,13 @@
-" lfrc vim syntax
+" Vim syntax file
+" Language:  lf config file
+" Maintainer: Cameron Wright https://github.com/VebbNix
+" Last Change: 27 June 2019
 
-"{{{ Initialization
 if exists("b:current_syntax")
 	finish
 endif
 
 let b:current_syntax = "lf"
-"}}}
 
 "{{{ Comment Matching
 syn match    lfComment        '#.*$'

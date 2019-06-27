@@ -18,8 +18,8 @@ If installing without a plugin manager, simply move all of the directories in th
 See screenshots for details.
 
 # Screenshots
-![screenshotLf](https://i.imgur.com/f79PaLy.png)
+![screenshotLf](https://i.imgur.com/jdQU7nB.png)
 
-![screenshotShell](https://i.imgur.com/piK8n2t.png)
+![screenshotShell](https://i.imgur.com/ReZoGj9.png)
 
 Colorscheme used for these screenshots: [gruvbox](https://github.com/morhetz/gruvbox "gruvbox on github")

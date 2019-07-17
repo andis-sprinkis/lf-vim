@@ -30,10 +30,6 @@ syn keyword  lfKeyword        set cmd map skipwhite
 syn keyword  lfOptions        push up half-up up half-up page-up down half-down page-down updir open quit top bottom toggle invert unselect copy cut paste clear redraw reload read find find-back find-next find-prev search search-back search-next search-prev mark-save mark-load anchorfind color256 dircounts dirfirst drawbox globsearch hidden ignorecase ignoredia incsearch preview reverse smartcase smartdia wrapscan wrapscroll number relativenumber findlen period scrolloff tabstop errorfmt filesep ifs previewer promptfmt shell sortby timefmt ratios info shellopts
 "}}}
 
-"{{{ Highlighting for Different Command Types
-syn match    lfShell          '\$.*$\|:.*$\|%.*$\|!.*$\|&.*$' contains=lfVar,lfSpecial,lfString
-"}}}
-
 "{{{ Special Matching
 syn match    lfSpecial        '<.*>\|\\.'
 "}}}
@@ -43,6 +39,7 @@ unlet b:current_syntax
 syn include  @Shell           syntax/sh.vim
 let b:current_syntax = "lf"
 syn region   lfIgnore         start=".{{\n" end="^}}" contains=lfExternalShell,lfExternalPatch
+syn match    lfShell          '\$.*$\|:.*$\|%.*$\|!.*$\|&.*$' transparent contains=@Shell
 syn match    lfExternalShell  "^.*$" transparent contained contains=@Shell
 syn match    lfExternalPatch  "^\s*cmd\ .*\ .{{$\|^}}$" contained
 "}}}
@@ -54,7 +51,7 @@ hi def link  lfSpecial        Special
 hi def link  lfString         String
 hi def link  lfKeyword        Statement
 hi def link  lfOptions        Constant
-hi def link  lfShell          PreProc
+"hi def link  lfShell          PreProc
 hi def link  lfConstant       Constant
 hi def link  lfExternalShell  Normal
 hi def link  lfExternalPatch  Normal

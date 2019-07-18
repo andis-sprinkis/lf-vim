@@ -51,7 +51,6 @@ hi def link  lfSpecial        Special
 hi def link  lfString         String
 hi def link  lfKeyword        Statement
 hi def link  lfOptions        Constant
-"hi def link  lfShell          PreProc
 hi def link  lfConstant       Constant
 hi def link  lfExternalShell  Normal
 hi def link  lfExternalPatch  Normal

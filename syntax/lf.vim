@@ -38,7 +38,7 @@ syn match    lfSpecial        '<.*>\|\\.'
 unlet b:current_syntax
 syn include  @Shell           syntax/sh.vim
 let b:current_syntax = "lf"
-syn region   lfIgnore         start=".{{\n" end="^}}" contains=lfExternalShell,lfExternalPatch
+syn region   lfIgnore         start=".{{\n" end="^}}" keepend contains=lfExternalShell,lfExternalPatch
 syn match    lfShell          '\$[a-zA-Z].*$\|:[a-zA-Z].*$\|%[a-zA-Z].*$\|![a-zA-Z].*$\|&[a-zA-Z].*$' transparent contains=@Shell,lfExternalPatch
 syn match    lfExternalShell  "^.*$" transparent contained contains=@Shell
 syn match    lfExternalPatch  "^\s*cmd\ .*\ .{{$\|^}}$" contained
@@ -53,6 +53,6 @@ hi def link  lfKeyword        Statement
 hi def link  lfOptions        Constant
 hi def link  lfConstant       Constant
 hi def link  lfExternalShell  Normal
-hi def link  lfExternalPatch  Normal
-hi def link  lfIgnore         Normal
+hi def link  lfExternalPatch  Special
+hi def link  lfIgnore         Special
 "}}}

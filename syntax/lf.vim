@@ -23,7 +23,7 @@ syn match    lfVar            '\$f\|\$fx\|\$fs\|\$id'
 "}}}
 
 "{{{ Keywords
-syn keyword  lfKeyword        set cmd map skipwhite
+syn keyword  lfKeyword        set cmd map cmap skipwhite
 "}}}
 
 "{{{ Options Keywords

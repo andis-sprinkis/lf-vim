@@ -27,7 +27,7 @@ syn keyword  lfKeyword        set cmd map cmap skipwhite
 "}}}
 
 "{{{ Options Keywords
-syn keyword  lfOptions        push up half-up up half-up page-up down half-down page-down updir open quit top bottom toggle invert unselect copy cut paste clear redraw reload read find find-back find-next find-prev search search-back search-next search-prev mark-save mark-load anchorfind color256 dircounts dirfirst drawbox globsearch icons hidden ignorecase ignoredia incsearch preview reverse smartcase smartdia wrapscan wrapscroll number relativenumber findlen period scrolloff tabstop errorfmt filesep ifs previewer promptfmt shell sortby timefmt ratios info shellopts
+syn keyword  lfOptions        push up half-up up half-up page-up down half-down page-down updir open quit top bottom toggle invert unselect copy cut paste clear redraw reload read find find-back find-next find-prev search search-back search-next search-prev mark-save mark-load anchorfind color256 dircounts dirfirst drawbox globsearch icons hidden ignorecase ignoredia incsearch preview reverse smartcase smartdia wrapscan wrapscroll number relativenumber findlen period scrolloff tabstop errorfmt filesep ifs previewer promptfmt shell sortby timefmt ratios info shellopts hiddenfiles truncatechar
 "}}}
 
 "{{{ Special Matching

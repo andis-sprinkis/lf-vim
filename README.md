@@ -22,4 +22,4 @@ See screenshots for details.
 
 ![screenshotShell](https://i.imgur.com/ReZoGj9.png)
 
-Colorscheme used for these screenshots: [gruvbox](https://github.com/sjl/badwolf "badwolf on github")
+Colorscheme used for these screenshots: [badwolf](https://github.com/sjl/badwolf "badwolf on github")

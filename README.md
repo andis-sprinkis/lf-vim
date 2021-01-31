@@ -10,7 +10,7 @@ Using vim-plug:
 ```
 Plug 'VebbNix/lf-vim'
 ```
-If installing without a plugin manager, simply move all of the directories in this repository to your `~/.vim/` directory.
+If installing without a plugin manager, simply move all of the directories in this repository to your `~/.vim/` directory(or to`${XDG_DATA_HOME:-~/.local/share}/nvim/plugged` for Neovim users).
 
 # Info
 + Separate colours used for lf variables like `$f`, `$fx`, `$fs` and `$id`.

@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:  lf config file
 " Maintainer: Cameron Wright https://github.com/VebbNix
-" Last Change: 31 Jan 2021
+" Last Change: 13 June 2021
 
 if exists("b:current_syntax")
     finish

@@ -4,7 +4,7 @@
 " Last Change: 31 Jan 2021
 
 if exists("b:current_syntax")
-	finish
+    finish
 endif
 
 let b:current_syntax = "lf"

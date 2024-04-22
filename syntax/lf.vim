@@ -124,9 +124,11 @@ syn keyword  lfOptions        anchorfind autoquit
     \ autoquit
     \ borderfmt
     \ cleaner
+    \ copyfmt
     \ cursoractivefmt
     \ cursorparentfmt
     \ cursorpreviewfmt
+    \ cutfmt
     \ dircache
     \ dircounts
     \ dirfirst
@@ -137,9 +139,11 @@ syn keyword  lfOptions        anchorfind autoquit
     \ errorfmt
     \ filesep
     \ findlen
+    \ globfilter
     \ globsearch
     \ hidden
     \ hiddenfiles
+    \ hidecursorinactive
     \ history
     \ icons
     \ ifs
@@ -161,9 +165,11 @@ syn keyword  lfOptions        anchorfind autoquit
     \ ratios
     \ relativenumber
     \ reverse
+    \ roundbox
     \ ruler
     \ rulerfmt
     \ scrolloff
+    \ selectfmt
     \ selmode
     \ shell
     \ shellflag
@@ -185,6 +191,7 @@ syn keyword  lfOptions        anchorfind autoquit
     \ pre-cd
     \ on-cd
     \ on-select
+    \ on-redraw
     \ on-quit
 "}}}
 

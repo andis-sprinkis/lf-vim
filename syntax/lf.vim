@@ -27,7 +27,7 @@ syn keyword  lfKeyword        set cmd map cmap skipwhite
 "}}}
 
 "{{{ Options Keywords
-syn keyword  lfOptions        anchorfind autoquit
+syn keyword  lfOptions
     \ quit
     \ up
     \ half-up

@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:  lf config file
 " Maintainer: Cameron Wright https://github.com/VebbNix
-" Last Change: 13 June 2021
+" Last Change: 22 April 2024
 
 if exists("b:current_syntax")
     finish
@@ -23,33 +23,176 @@ syn match    lfVar            '\$f\|\$fx\|\$fs\|\$id'
 "}}}
 
 "{{{ Keywords
-syn keyword  lfKeyword        set cmd map cmap skipwhite
+syn keyword  lfKeyword        set setlocal cmd map cmap skipwhite
 "}}}
 
 "{{{ Options Keywords
-syn keyword  lfOptions        anchorfind autoquit
-    \ bottom
-    \ cd clear copy cut cleaner
-    \ delete down draw dircounts dirfirst drawbox
-    \ echo echoerr echomsg errorfmt
-    \ filesep findlen
-    \ find find-back find-next find-prev
-    \ globsearch glob-select glob-unselect
-    \ half-down half-up hidden hiddenfiles
-    \ icons ifs ignorecase ignoredia incsearch info invert
-    \ load
-    \ mark-load mark-remove mark-save mouse
-    \ number
-    \ open
-    \ page-down page-up paste push period preview previewer promptfmt
+syn keyword  lfOptions
     \ quit
-    \ ratios relativenumber reverse read redraw reload rename
-    \ scrolloff shell shellflag shellopts smartcase smartdia sortby
-    \ search search-back search-next search-prev
-    \ select shell shell-async shell-pipe shell-wait source sync
-    \ tabstop timefmt truncatechar toggle top
-    \ unselect up updir
-    \ waitmsg wrapscan wrapscroll
+    \ up
+    \ half-up
+    \ page-up
+    \ scroll-up
+    \ down
+    \ half-down
+    \ page-down
+    \ scroll-down
+    \ updir
+    \ open
+    \ jump-next
+    \ jump-prev
+    \ top
+    \ bottom
+    \ high
+    \ middle
+    \ low
+    \ toggle
+    \ invert
+    \ invert-below
+    \ unselect
+    \ glob-select
+    \ glob-unselect
+    \ calcdirsize
+    \ clearmaps
+    \ copy
+    \ cut
+    \ paste
+    \ clear
+    \ sync
+    \ draw
+    \ redraw
+    \ load
+    \ reload
+    \ echo
+    \ echomsg
+    \ echoerr
+    \ cd
+    \ select
+    \ delete
+    \ rename
+    \ source
+    \ push
+    \ read
+    \ shell
+    \ shell-pipe
+    \ shell-wait
+    \ shell-async
+    \ find
+    \ find-back
+    \ find-next
+    \ find-prev
+    \ search
+    \ search-back
+    \ search-next
+    \ search-prev
+    \ filter
+    \ setfilter
+    \ mark-save
+    \ mark-load
+    \ mark-remove
+    \ tag
+    \ tag-toggle
+    \ cmd-escape
+    \ cmd-complete
+    \ cmd-menu-complete
+    \ cmd-menu-complete-back
+    \ cmd-menu-accept
+    \ cmd-enter
+    \ cmd-interrupt
+    \ cmd-history-next
+    \ cmd-history-prev
+    \ cmd-left
+    \ cmd-right
+    \ cmd-home
+    \ cmd-end
+    \ cmd-delete
+    \ cmd-delete-back
+    \ cmd-delete-home
+    \ cmd-delete-end
+    \ cmd-delete-unix-word
+    \ cmd-yank
+    \ cmd-transpose
+    \ cmd-transpose-word
+    \ cmd-word
+    \ cmd-word-back
+    \ cmd-delete-word
+    \ cmd-delete-word-back
+    \ cmd-capitalize-word
+    \ cmd-uppercase-word
+    \ cmd-lowercase-word
+    \ anchorfind
+    \ autoquit
+    \ borderfmt
+    \ cleaner
+    \ copyfmt
+    \ cursoractivefmt
+    \ cursorparentfmt
+    \ cursorpreviewfmt
+    \ cutfmt
+    \ dircache
+    \ dircounts
+    \ dirfirst
+    \ dironly
+    \ dirpreviews
+    \ drawbox
+    \ dupfilefmt
+    \ errorfmt
+    \ filesep
+    \ findlen
+    \ globfilter
+    \ globsearch
+    \ hidden
+    \ hiddenfiles
+    \ hidecursorinactive
+    \ history
+    \ icons
+    \ ifs
+    \ ignorecase
+    \ ignoredia
+    \ incfilter
+    \ incsearch
+    \ info
+    \ infotimefmtnew
+    \ infotimefmtold
+    \ mouse
+    \ number
+    \ numberfmt
+    \ period
+    \ preserve
+    \ preview
+    \ previewer
+    \ promptfmt
+    \ ratios
+    \ relativenumber
+    \ reverse
+    \ roundbox
+    \ ruler
+    \ rulerfmt
+    \ scrolloff
+    \ selectfmt
+    \ selmode
+    \ shell
+    \ shellflag
+    \ shellopts
+    \ sixel
+    \ smartcase
+    \ smartdia
+    \ sortby
+    \ statfmt
+    \ tabstop
+    \ tagfmt
+    \ tempmarks
+    \ timefmt
+    \ truncatechar
+    \ truncatepct
+    \ waitmsg
+    \ wrapscan
+    \ wrapscroll
+    \ pre-cd
+    \ on-cd
+    \ on-select
+    \ on-redraw
+    \ on-quit
 "}}}
 
 "{{{ Special Matching

@@ -44,10 +44,10 @@ For example:
 
 ```vim
 " Vimscript
-let g:lf_shell_syntax = "syntax/cmd.vim"
+let g:lf_shell_syntax = "syntax/dosbatch.vim"
 let b:lf_shell_syntax = "syntax/zsh.vim"
 " Lua (Neovim)
-lua vim.g.lf_shell_syntax = "syntax/cmd.vim"
+lua vim.g.lf_shell_syntax = "syntax/dosbatch.vim"
 lua vim.b.lf_shell_syntax = "syntax/zsh.vim"
 ```
 

@@ -1,8 +1,9 @@
 " Vim syntax file
 " Language: lf config file
 " License: GNU General Public License v2.0
-" Maintainer: Cameron Wright https://github.com/VebbNix
-" Last Change: 22 April 2024
+" Maintainer: Andis Sprinkis <andis@sprinkis.com>
+" Former maintainer: Cameron Wright
+" Last Change: 28 September 2024
 
 if exists("b:current_syntax")
     finish

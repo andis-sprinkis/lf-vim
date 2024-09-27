@@ -1,5 +1,6 @@
 " Vim syntax file
-" Language:  lf config file
+" Language: lf config file
+" License: GNU General Public License v2.0
 " Maintainer: Cameron Wright https://github.com/VebbNix
 " Last Change: 22 April 2024
 

@@ -7,13 +7,13 @@ Vim syntax highlighting for lfrc
 Using
 
 - Vundle:
-  
+
   ```vim
   Plugin 'andis-sprinkis/lf-vim'
   ```
 
 - vim-plug:
-  
+
   ```vim
   Plug 'andis-sprinkis/lf-vim'
   ```
@@ -21,20 +21,39 @@ Using
 - lazy.nvim:
 
   ```lua
-  {
-    'andis-sprinkis/lf-vim',
-    event = { 'BufReadPre lfrc' }
-  }
+  { 'andis-sprinkis/lf-vim', event = { 'BufReadPre lfrc' } }
   ```
-  
- - No plugin manager: copy all of the directories in this repository to your `~/.vim/` directory (or to`${XDG_DATA_HOME:-~/.local/share}/nvim/plugged` for Neovim users).
 
-# Info
+- No plugin manager:
 
-+ Separate colours used for lf variables like `$f`, `$fx`, `$fs` and `$id`.
-+ Shell script highlighting is used between `cmd [CMD] ${{ }}`.
+  Copy all of the directories in this repository to your `~/.vim/` directory (or to`${XDG_DATA_HOME:-~/.local/share}/nvim/plugged` for Neovim users).
 
-See screenshots for details.
+# Shell syntax
+
+For highlighting the shell commands this plugin uses the Vimscript `syntax include` pattern `syntax/sh.vim` (the `sh`,
+`ksh`, `bash` preset included in Vim).
+
+It can be changed using the variables:
+
+| Setting                | Variable            |
+| ---------------------- | ------------------- |
+| The global setting     | `g:lf_shell_syntax` |
+| A buffer-local setting | `b:lf_shell_syntax` |
+
+For example:
+
+```vim
+" Vimscript
+let g:lf_shell_syntax = "syntax/cmd.vim"
+let b:lf_shell_syntax = "syntax/zsh.vim"
+" Lua (Neovim)
+lua vim.g.lf_shell_syntax = "syntax/cmd.vim"
+lua vim.b.lf_shell_syntax = "syntax/zsh.vim"
+```
+
+---
+
+See the `$VIMRUNTIME/syntax` directory for the available syntax options (`:echo $VIMRUNTIME`).
 
 # Screenshots
 

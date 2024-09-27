@@ -201,8 +201,10 @@ syn match    lfSpecial        '<.*>\|\\.'
 "}}}
 
 "{{{ Shell Script Matching for cmd
+let s:shell_syntax = get(g:, 'lf_shell_syntax', "syntax/sh.vim")
+let s:shell_syntax = get(b:, 'lf_shell_syntax', s:shell_syntax)
 unlet b:current_syntax
-syn include  @Shell           syntax/sh.vim
+exe 'syn include @Shell '.s:shell_syntax
 let b:current_syntax = "lf"
 syn region   lfIgnore         start=".{{\n" end="^}}"
     \ keepend contains=lfExternalShell,lfExternalPatch

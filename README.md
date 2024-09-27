@@ -1,24 +1,24 @@
 # lf-vim
 
-Vim syntax highlighting for lfrc
+Vim syntax highlighting for the [lf](https://github.com/gokcehan/lf) configuration file (`lfrc`).
 
 # Installation
 
-Using
+Using:
 
-- Vundle:
+- Vundle
 
   ```vim
   Plugin 'andis-sprinkis/lf-vim'
   ```
 
-- vim-plug:
+- vim-plug
 
   ```vim
   Plug 'andis-sprinkis/lf-vim'
   ```
 
-- lazy.nvim:
+- lazy.nvim
 
   ```lua
   { 'andis-sprinkis/lf-vim', event = { 'BufReadPre lfrc' } }

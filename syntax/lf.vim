@@ -2,7 +2,7 @@
 " Language: lf config file
 " License: GNU General Public License v2.0
 " Maintainer: Andis Sprinkis <andis@sprinkis.com>
-" Former maintainer: Cameron Wright
+" Former Maintainer: Cameron Wright
 " Last Change: 28 September 2024
 
 if exists("b:current_syntax")

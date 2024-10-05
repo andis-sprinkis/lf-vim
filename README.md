@@ -4,21 +4,19 @@ Vim syntax highlighting for the [lf](https://github.com/gokcehan/lf) configurati
 
 # Installation
 
-Using:
-
-- Vundle
+- Vundle:
 
   ```vim
   Plugin 'andis-sprinkis/lf-vim'
   ```
 
-- vim-plug
+- vim-plug:
 
   ```vim
   Plug 'andis-sprinkis/lf-vim'
   ```
 
-- lazy.nvim
+- lazy.nvim:
 
   ```lua
   { 'andis-sprinkis/lf-vim', event = { 'BufReadPre lfrc' } }
@@ -26,7 +24,7 @@ Using:
 
 - No plugin manager:
 
-  Copy all of the directories in this repository to your `~/.vim/` directory (or to`${XDG_DATA_HOME:-~/.local/share}/nvim/plugged` for Neovim users).
+  Copy all of the directories in this repository to your `~/.vim/` directory (or to `${XDG_DATA_HOME:-~/.local/share}/nvim/plugged` for Neovim users).
 
 # Shell syntax
 

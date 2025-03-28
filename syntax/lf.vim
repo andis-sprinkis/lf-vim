@@ -2,7 +2,7 @@
 " Language: lf file manager configuration file (lfrc)
 " Maintainer: Andis Sprinkis <andis@sprinkis.com>
 " Former Maintainer: Cameron Wright
-" Upstream URL: https://github.com/andis-sprinkis/lf-vim
+" URL: https://github.com/andis-sprinkis/lf-vim
 " Last Change: 28 March 2025
 "
 " The shell syntax highlighting is configurable. See $VIMRUNTIME/doc/syntax.txt

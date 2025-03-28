@@ -2,14 +2,9 @@
 
 Vim syntax highlighting for the [lf](https://github.com/gokcehan/lf) configuration file (`lfrc`).
 
-## Repository archival notice
+**This extension has been merged in Vim (9.1.0778 and newer) and Neovim (0.11 and newer), so it should work out of the box with the recent versions of these programs.**
 
-The code from this repository has been merged in Vim (released in version 9.1.0778) and Neovim (released in version 0.11), so the repository has been archived.
-
-- Neovim pull request: [vim-patch:9.1.0778: filetype: lf config files are not recognized by clason · Pull Request #30801 · neovim/neovim](https://github.com/neovim/neovim/pull/30801)
-- Vim pull request: [runtime(syntax): add the lf file manager configuration file (lfrc) syntax by andis-sprinkis · Pull Request #15859 · vim/vim](https://github.com/vim/vim/pull/15859)
-
-Further changes and issues should be submitted in [Vim respository](https://github.com/vim/vim).
+You can raise the issues and pull requests in this GitHub repository to be later submitted to the Vim repository.
 
 ## Installation
 

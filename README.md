@@ -2,6 +2,8 @@
 
 Vim syntax highlighting for the [lf](https://github.com/gokcehan/lf) configuration file (`lfrc`).
 
+## Now part of Vim and Neovim
+
 **This extension has been merged in Vim (9.1.0778 and newer) and Neovim (0.11 and newer), so it should work out of the box with the recent versions of these programs.**
 
 You can raise the issues and pull requests in this GitHub repository, to be later submitted to the Vim repository.

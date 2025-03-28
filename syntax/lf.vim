@@ -1,9 +1,12 @@
 " Vim syntax file
-" Language: lf config file
-" License: GNU General Public License v2.0
+" Language: lf file manager configuration file (lfrc)
 " Maintainer: Andis Sprinkis <andis@sprinkis.com>
 " Former Maintainer: Cameron Wright
-" Last Change: 28 September 2024
+" Former URL: https://github.com/andis-sprinkis/lf-vim
+" Last Change: 13 October 2024
+"
+" The shell syntax highlighting is configurable. See $VIMRUNTIME/doc/syntax.txt
+" lf version: 32
 
 if exists("b:current_syntax")
     finish

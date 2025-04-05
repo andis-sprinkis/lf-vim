@@ -207,7 +207,8 @@ syn keyword  lfOptions
 "}}}
 
 "{{{ Special Matching
-syn match    lfSpecial        '<.*>\|\\.'
+syn match    lfSpecial        '\v\<.+\>'
+syn match    lfSpecial        '\v\\(["\\abfnrtv]|\o+)'
 "}}}
 
 "{{{ Shell Script Matching for cmd

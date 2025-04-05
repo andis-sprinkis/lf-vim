@@ -3,8 +3,7 @@
 " Maintainer: Andis Sprinkis <andis@sprinkis.com>
 " Former Maintainer: Cameron Wright
 " URL: https://github.com/andis-sprinkis/lf-vim
-" Last Change: 28 March 2025
-" 29 Mar 2025 by Vim Project (save and restore 'cpo' setting)
+" Last Change: 5 Apr 2025
 "
 " The shell syntax highlighting is configurable. See $VIMRUNTIME/doc/syntax.txt
 " lf version: 34
@@ -12,6 +11,7 @@
 if exists("b:current_syntax")
     finish
 endif
+
 let s:cpo = &cpo
 set cpo&vim
 
@@ -219,7 +219,6 @@ let b:current_syntax = "lf"
 syn region   lfIgnore         start=".{{\n" end="^}}"
     \ keepend contains=lfExternalShell,lfExternalPatch
 syn match    lfShell          '\$[a-zA-Z].*$
-    \\|:[a-zA-Z].*$
     \\|%[a-zA-Z].*$
     \\|![a-zA-Z].*$
     \\|&[a-zA-Z].*$'
@@ -240,5 +239,6 @@ hi def link  lfExternalShell  Normal
 hi def link  lfExternalPatch  Special
 hi def link  lfIgnore         Special
 "}}}
+
 let &cpo = s:cpo
 unlet s:cpo

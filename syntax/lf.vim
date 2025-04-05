@@ -23,11 +23,7 @@ syn match    lfComment        '#.*$'
 
 "{{{ String Matching
 syn match    lfString         "'.*'"
-syn match    lfString         '".*"' contains=lfVar,lfSpecial
-"}}}
-
-"{{{ Match lf Variables
-syn match    lfVar            '\$f\|\$fx\|\$fs\|\$id'
+syn match    lfString         '".*"' contains=lfSpecial
 "}}}
 
 "{{{ Keywords
@@ -235,7 +231,6 @@ syn match    lfExternalPatch  "^\s*cmd\ .*\ .{{$\|^}}$" contained
 
 "{{{ Link Highlighting
 hi def link  lfComment        Comment
-hi def link  lfVar            Type
 hi def link  lfSpecial        Special
 hi def link  lfString         String
 hi def link  lfKeyword        Statement

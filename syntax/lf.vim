@@ -213,6 +213,7 @@ syn match    lfSpecial        '<.*>\|\\.'
 "{{{ Shell Script Matching for cmd
 let s:shell_syntax = get(g:, 'lf_shell_syntax', "syntax/sh.vim")
 let s:shell_syntax = get(b:, 'lf_shell_syntax', s:shell_syntax)
+
 unlet b:current_syntax
 exe 'syn include @Shell '.s:shell_syntax
 let b:current_syntax = "lf"

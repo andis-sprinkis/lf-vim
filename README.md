@@ -47,10 +47,13 @@ It can be changed using the variables:
 For example:
 
 ```vim
-" Vimscript
+" Vimscript (Vim, Neovim), init.vim
 let g:lf_shell_syntax = "syntax/dosbatch.vim"
 let b:lf_shell_syntax = "syntax/zsh.vim"
-" Lua (Neovim)
+```
+
+```lua
+-- Lua (Neovim), init.lua
 lua vim.g.lf_shell_syntax = "syntax/dosbatch.vim"
 lua vim.b.lf_shell_syntax = "syntax/zsh.vim"
 ```

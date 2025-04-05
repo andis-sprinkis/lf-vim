@@ -12,25 +12,25 @@ This GitHub repository tracks the latest development version of the plugin. You 
 
 - Vundle:
 
-  ```vim
-  Plugin 'andis-sprinkis/lf-vim'
-  ```
+    ```vim
+    Plugin 'andis-sprinkis/lf-vim'
+    ```
 
 - vim-plug:
 
-  ```vim
-  Plug 'andis-sprinkis/lf-vim'
-  ```
+    ```vim
+    Plug 'andis-sprinkis/lf-vim'
+    ```
 
 - lazy.nvim:
 
-  ```lua
-  { 'andis-sprinkis/lf-vim', event = { 'BufReadPre lfrc' } }
-  ```
+    ```lua
+    { 'andis-sprinkis/lf-vim', event = { 'BufReadPre lfrc' } }
+    ```
 
 - No plugin manager:
 
-  Copy all of the directories in this repository to your `~/.vim/` directory (or to `${XDG_DATA_HOME:-~/.local/share}/nvim/plugged` for Neovim users).
+    Copy all of the directories in this repository to your `~/.vim/` directory (or to `${XDG_DATA_HOME:-~/.local/share}/nvim/plugged` for Neovim users).
 
 ## Shell syntax
 

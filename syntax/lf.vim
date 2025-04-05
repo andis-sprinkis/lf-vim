@@ -216,14 +216,18 @@ let s:shell_syntax = get(b:, 'lf_shell_syntax', s:shell_syntax)
 unlet b:current_syntax
 exe 'syn include @Shell '.s:shell_syntax
 let b:current_syntax = "lf"
+
 syn region   lfIgnore         start=".{{\n" end="^}}"
     \ keepend contains=lfExternalShell,lfExternalPatch
+
 syn match    lfShell          '\$[a-zA-Z].*$
     \\|%[a-zA-Z].*$
     \\|![a-zA-Z].*$
     \\|&[a-zA-Z].*$'
     \ transparent contains=@Shell,lfExternalPatch
+
 syn match    lfExternalShell  "^.*$" transparent contained contains=@Shell
+
 syn match    lfExternalPatch  "^\s*cmd\ .*\ .{{$\|^}}$" contained
 "}}}
 

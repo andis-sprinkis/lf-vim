@@ -54,8 +54,8 @@ let b:lf_shell_syntax = "syntax/zsh.vim"
 
 ```lua
 -- Lua (Neovim), init.lua
-lua vim.g.lf_shell_syntax = "syntax/dosbatch.vim"
-lua vim.b.lf_shell_syntax = "syntax/zsh.vim"
+vim.g.lf_shell_syntax = "syntax/dosbatch.vim"
+vim.b.lf_shell_syntax = "syntax/zsh.vim"
 ```
 
 ---

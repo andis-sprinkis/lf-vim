@@ -122,7 +122,8 @@ map st :{{
 
 map i $LESSOPEN='| ~/.config/lf/pv.sh %s' less -R $f
 
-#   Unix
+# Unix
+# let b:lf_shell_syntax = "syntax/sh.vim"
 cmd open &$OPENER "$f"
 map e $$EDITOR "$f"
 map i $  $PAGER "$f"
@@ -138,7 +139,8 @@ cmd maps $lf -remote "query ${id:-""} maps" | $PAGER
 cmd cmaps $lf -remote "query $id cmaps" | $PAGER
 cmd cmds $lf -remote "query $id cmds" |    $PAGER
 
-#   Windows
+# Windows
+# let b:lf_shell_syntax = "syntax/dosbatch.vim"
 cmd open &%OPENER% %f%
 map e $%EDITOR% %f%
 map i !%PAGER% %f%

@@ -1,1 +1,1 @@
-au BufNewFile,BufRead lfrc set filetype=lf
+au BufNewFile,BufRead *lfrc set filetype=lf

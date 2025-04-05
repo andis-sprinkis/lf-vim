@@ -25,7 +25,7 @@ This GitHub repository tracks the latest development version of the plugin. You 
 - lazy.nvim:
 
   ```lua
-  { 'andis-sprinkis/lf-vim', event = { 'BufReadPre lfrc' } }
+  { 'andis-sprinkis/lf-vim', event = { 'BufReadPre *lfrc' } }
   ```
 
 - No plugin manager:

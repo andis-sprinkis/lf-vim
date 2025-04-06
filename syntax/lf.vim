@@ -203,7 +203,7 @@ syn keyword lfOptions
 "}}}
 
 "{{{ Special Matching
-syn match lfSpecial '\v\<.+\>'
+syn match lfSpecial '\v\<[^>]+\>'
 syn match lfSpecial '\v\\(["\\abfnrtv]|\o+)'
 "}}}
 
@@ -215,29 +215,20 @@ unlet b:current_syntax
 exe 'syn include @Shell '.s:shell_syntax
 let b:current_syntax = "lf"
 
-syn region lfIgnore start=".{{\n" end="^}}" keepend contains=lfExternalShell,lfExternalPatch
-
-syn match lfShell '\$[a-zA-Z].*$
-  \\|%[a-zA-Z].*$
-  \\|![a-zA-Z].*$
-  \\|&[a-zA-Z].*$'
-  \ transparent contains=@Shell,lfExternalPatch
-
-syn match lfExternalShell "^.*$" transparent contained contains=@Shell
-
-syn match lfExternalPatch "^\s*cmd\ .*\ .{{$\|^}}$" contained
+syn region lfCommand matchgroup=lfCommandMarker start=' \zs:\ze' end='$' keepend transparent
+syn region lfCommand matchgroup=lfCommandMarker start=' \zs:{{\ze' end='}}' keepend transparent
+syn region lfShell matchgroup=lfShellMarker start=' \zs[$!%&]\ze' end='$' keepend contains=@Shell
+syn region lfShell matchgroup=lfShellMarker start=' \zs[$!%&]{{\ze' end='}}' keepend contains=@Shell
 "}}}
 
 "{{{ Link Highlighting
 hi def link lfComment       Comment
-hi def link lfSpecial       Special
+hi def link lfSpecial       SpecialChar
 hi def link lfString        String
 hi def link lfKeyword       Statement
 hi def link lfOptions       Constant
-hi def link lfConstant      Constant
-hi def link lfExternalShell Normal
-hi def link lfExternalPatch Special
-hi def link lfIgnore        Special
+hi def link lfCommandMarker Special
+hi def link lfShellMarker   Special
 "}}}
 
 let &cpo = s:cpo

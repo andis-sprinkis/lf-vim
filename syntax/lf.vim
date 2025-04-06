@@ -41,6 +41,7 @@ syn keyword lfOptions
   \ cleaner
   \ clear
   \ clearmaps
+  \ cmaps
   \ cmd-capitalize-word
   \ cmd-complete
   \ cmd-delete
@@ -69,6 +70,7 @@ syn keyword lfOptions
   \ cmd-word
   \ cmd-word-back
   \ cmd-yank
+  \ cmds
   \ copy
   \ copyfmt
   \ cursoractivefmt
@@ -82,6 +84,7 @@ syn keyword lfOptions
   \ dirfirst
   \ dironly
   \ dirpreviews
+  \ doc
   \ down
   \ draw
   \ drawbox
@@ -123,6 +126,7 @@ syn keyword lfOptions
   \ load
   \ locale
   \ low
+  \ maps
   \ mark-load
   \ mark-remove
   \ mark-save

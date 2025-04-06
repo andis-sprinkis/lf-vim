@@ -8,9 +8,7 @@
 " The shell syntax highlighting is configurable. See $VIMRUNTIME/doc/syntax.txt
 " lf version: 34
 
-if exists("b:current_syntax")
-  finish
-endif
+if exists("b:current_syntax") | finish | endif
 
 let s:cpo = &cpo
 set cpo&vim

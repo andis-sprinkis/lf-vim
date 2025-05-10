@@ -3,7 +3,7 @@
 " Maintainer: Andis Sprinkis <andis@sprinkis.com>
 " Former Maintainer: Cameron Wright
 " URL: https://github.com/andis-sprinkis/lf-vim
-" Last Change: 5 Apr 2025
+" Last Change: 10 May 2025
 "
 " The shell syntax highlighting is configurable. See $VIMRUNTIME/doc/syntax.txt
 " lf version: 34

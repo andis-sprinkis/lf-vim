@@ -215,6 +215,7 @@ let s:shell_syntax = get(b:, 'lf_shell_syntax', s:shell_syntax)
 
 unlet b:current_syntax
 exe 'syn include @Shell '.s:shell_syntax
+syn iskeyword @,-
 let b:current_syntax = "lf"
 
 syn region lfCommand matchgroup=lfCommandMarker start=' \zs:\ze' end='$' keepend transparent

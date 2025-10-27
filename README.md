@@ -1,5 +1,7 @@
 # lf-vim
 
+Testing branch protection rules. Not to be merged.
+
 Vim syntax highlighting for the [lf](https://github.com/gokcehan/lf) configuration file (`lfrc`).
 
 ## Now part of Vim and Neovim
